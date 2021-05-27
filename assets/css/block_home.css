@@ -1,0 +1,81 @@
+/*Headerio css*/
+
+
+ul li {
+  display: inline;
+}
+
+.items_row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_menu {
+  position: fixed;
+  background: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.main_logo {
+  padding: 20px;
+}
+
+.nav_menu {
+  padding-top: 12px;
+  margin-right: 20px;
+}
+
+li {
+  margin-right: 20px;
+}
+
+/* Banner'io css*/
+
+
+.banner {
+  background: url(https://preview.colorlib.com/theme/personal/img/blog/xblog-home-banner.jpg.pagespeed.ic.LNeIdTttnV.webp);
+  background-size: cover;
+  padding: 130px 0;
+  position: relative;
+  min-height: 300px;
+}
+
+.container {
+  max-width: 1140px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.main_blog_part {
+  text-align: center;
+  padding: 90px 0;
+  margin-top: 70px;
+  width: 100%;
+}
+.text_white {
+  color: #fff;
+}
+
+.main_blog_part h1 {
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.main_blog_part p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* Neveikia line-height (keiciasi background image lokacija, o ne button line height) */
+.main_blog_part .main_blog_btn {
+  text-decoration: none;
+  background: white;
+  color: black;
+  line-height: 42px;
+  padding-left: 30px;
+  padding-right: 30px;
+}

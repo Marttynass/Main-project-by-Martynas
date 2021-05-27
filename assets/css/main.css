@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
+  padding-top: 70px;
 }
 ul li {
   display: inline;
@@ -36,9 +37,11 @@ p {
 }
 
 .main_menu {
-    position: fixed;
-    background: #fff;
-    width: 100%;
+  position: fixed;
+  background: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .main_logo {
@@ -46,7 +49,7 @@ p {
 }
 
 .nav_menu {
-  margin-top: 15px;
+  padding-top: 12px;
   margin-right: 20px;
 }
 
@@ -68,34 +71,77 @@ li {
   margin-bottom: 100px;
 }
 
-/* .first_container {
-    box-sizing: border-box;
-    margin-top: 100px;
-
-    NEINA PADARYT, KAD PIRMAS KONTEINERIS PASITRAUKTU ZEMYN NUO HEADERIO, KADANGI DABAR UZLIPA
-} */
-
 .this_is_me,
 .about_me_block {
   width: 50%;
   box-sizing: border-box;
 }
 
-.second_container {
-  max-width: 1140px;
-  flex-wrap: nowrap;
+.about_button,
+.details_button {
+  background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  line-height: 42px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-.about_button, .details_button {
-    background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);;
-    line-height: 42px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border: none;
-    color: #fff;
-    display: inline-block;
-    font-weight: 500;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
+.third_flexbox_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
 }
+
+.third_block_part {
+  width: 33%;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.third_block_part p {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.third_block_part h4 {
+  font-size: 18px;
+  text-transform: unset;
+  color: black;
+  font-weight: 600;
+}
+
+.third_block_part i {
+  font-size: 64px;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+
+.third_container_main_text {
+  text-align: center;
+}
+
+.third_container_main_text h1 {
+  text-transform: unset;
+}
+
+.third_block_part:hover > .interactive_block i{
+  color:blue;
+  opacity: 50%;
+
+}
+
+.third_block_part:hover > .interactive_block h4{
+  color:blue;
+  opacity: 50%;
+
+}
+
