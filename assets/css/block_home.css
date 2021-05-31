@@ -1,6 +1,5 @@
 /*Headerio css*/
 
-
 ul li {
   display: inline;
 }
@@ -34,13 +33,21 @@ li {
 
 /* Banner'io css*/
 
-
 .banner {
   background: url(https://preview.colorlib.com/theme/personal/img/blog/xblog-home-banner.jpg.pagespeed.ic.LNeIdTttnV.webp);
   background-size: cover;
-  padding: 130px 0;
+  padding: 110px 0;
   position: relative;
   min-height: 300px;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .container {
@@ -55,6 +62,7 @@ li {
   padding: 90px 0;
   margin-top: 70px;
   width: 100%;
+  z-index: 999;
 }
 .text_white {
   color: #fff;
@@ -68,14 +76,363 @@ li {
 .main_blog_part p {
   font-size: 16px;
   font-weight: 300;
+  margin-bottom: 30px;
 }
 
-/* Neveikia line-height (keiciasi background image lokacija, o ne button line height) */
 .main_blog_part .main_blog_btn {
   text-decoration: none;
   background: white;
   color: black;
+  padding: 10px 30px;
+}
+
+/* Kategoriju linija */
+
+.category {
+  margin-top: 100px;
+}
+.container_2 {
+  max-width: 1140px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.first_widget {
+  width: 33%;
+  position: relative;
+}
+
+.details {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 50px;
+  color: #fff;
+}
+
+.overlay_first_widget {
+  background: rgba(0, 0, 0, 0.85);
+  margin: 7%;
+  position: absolute;
+  left: -12px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+span {
+  display: inline-block;
+  background: #fff;
+  width: 60%;
+  height: 1%;
+}
+
+.first_widget:hover .overlay_first_widget {
+  background-color: #8490f8;
+  opacity: 85%;
+}
+
+/* post_content_area css */
+
+.post_content_area {
+  background-color: #f9f9ff;
+}
+
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left_side {
+  max-width: 66.666%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 45px;
+}
+
+.first_post_area {
+  display: flex;
+  margin-top: 45px;
+}
+
+.column_area {
+  max-width: 25%;
+}
+
+.column_area .tags {
+  padding: 0;
+}
+
+.post_area {
+  max-width: 75%;
+}
+
+.user_details_block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags a {
+  text-decoration: none;
+  color: #222;
+}
+
+.tags a:hover {
+  color: #8490ff;
+}
+
+.user_details_block i {
+  font-size: 20px;
+}
+
+.user_details_block p {
+  width: 100%;
+}
+
+.user_details_block a {
+  text-decoration: none;
+  color: #222;
+}
+
+.user_details_block a:hover {
+  color: #8490ff;
+}
+
+.post_area_image {
+  width: 100%;
+}
+.post_area_image .post_image {
+  max-width: 100%;
+}
+
+.post_area_image a {
+  text-decoration: none;
+}
+
+.post_area_image h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+  font-family: "Poppins", sans-serif;
+}
+
+.post_area_image p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #777;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 25px;
+}
+
+.post_area_image a.button {
+  background-color: #fff;
+  color: #222;
+  padding: 10px 30px;
   line-height: 42px;
-  padding-left: 30px;
-  padding-right: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.widget_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 33.333%;
+  margin: 0 auto;
+  padding-top: 75px;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  max-height: 0;
+}
+/*_________________________*/
+/* Paieskos langelio css */
+
+.search_form_block {
+  display: flex;
+}
+
+.search_form input::placeholder {
+  color: #fff;
+  font-size: 20px;
+}
+
+.search_form {
+  display: flex;
+  margin: 0 auto;
+}
+
+.las,
+.la {
+  font-size: 25px;
+}
+
+.search_form input {
+  padding: 10px 22px;
+  background: #8490ff;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.search_form button {
+  padding: 10px 22px;
+  background: #8490ff;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/*___________________________*/
+
+.search_widget {
+  text-align: center;
+}
+.widget_data {
+  text-align: center;
+  margin: 30px 30px;
+}
+
+.widget_wrap a {
+  text-decoration: none;
+}
+
+.widget_data h4 {
+  font-size: 18px;
+  color: #222;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-transform: none;
+}
+
+.widget_data p {
+  font-size: 14px;
+  color: #777;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}
+
+.widget_data li a {
+  color: #222;
+}
+
+.widget_data li a:hover {
+  color: #8490ff;
+}
+
+.widget_data ul {
+  padding: 0;
+}
+
+.post_widget h4 {
+  text-align: center;
+}
+
+.post_widget {
+  width: 100%;
+  height: 100%;
+}
+
+.title_block {
+  margin-bottom: 30px;
+}
+
+.popular_title,
+.post_categories_title {
+  padding: 10px 22px;
+  background: #8490ff;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.post_area_image img {
+  width: 100%;
+}
+
+.single_post_details {
+  max-width: 75%;
+  margin-left: 30px;
+  box-sizing: border-box;
+}
+
+.single_post {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.single_post_image {
+  max-width: 25%;
+}
+
+.single_post_details h6 {
+  margin: 0;
+}
+
+.single_post_details p {
+  margin: 0;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 300;
+  color: #777;
+}
+
+.single_post_details h6 {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: "Poppins";
+}
+
+.single_post_details a h6:hover {
+  color: #8490ff;
+}
+
+.post_box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+}
+
+.column_area {
+  text-align: right;
+  padding: 0 15px;
+}
+
+.post_area {
+  padding: 0 15px;
+}
+
+/*Kategoriju saraso css*/
+/*_______________________________*/
+
+.ul_cat_list a {
+  display: flex;
+  justify-content: space-between;
+  border-bottom-style: dotted;
+  color: #777;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.ul_cat_list {
+  padding: 0;
+}
+
+.ul_cat_list li:hover a{
+  color: #8490ff;
 }
